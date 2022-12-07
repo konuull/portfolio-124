@@ -1,3 +1,13 @@
+
+
+:root{
+    --pink-color:#FF5E69;
+}
+
+*{
+    box-sizing:content-box;
+}
+
 @import url('./reset.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 body {
@@ -20,6 +30,7 @@ header {
 header .nav-links a {
     color:#000;
     padding: 10px;
+    text-decoration: none;
 }
 .fa-bars{
    display:none; 
@@ -148,3 +159,40 @@ header .nav-links a {
 
 
 /* trusted-by-section end */
+
+
+/* services sections start */
+
+
+ h6 , h1 {
+        text-align:center;
+    }
+h6{
+    text-transform: uppercase;
+    font-weight:700px;
+    color: var(--pink-color);
+    font-size:22px;
+}
+
+
+.services{
+    padding-top:100px;
+}
+.services-cards-section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.services-card{
+    width:20%;
+    min-width:250px;
+    padding:20px;
+}
+
+ul{
+    list-style-type:square;
+    list-style-position:inside;
+    padding-left:0;
+}
+/* sertvices sections end */
+
