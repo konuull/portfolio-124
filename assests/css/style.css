@@ -14,7 +14,9 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-
+a {
+    text-decoration: none;
+}
 header {
     display:flex;
     /* default kodlari */
@@ -64,21 +66,28 @@ header .nav-links a {
 }
 
 .intro-left-side{
-    padding-top:7,3rem;
-    min-width:680px;
-    flex-basis:50%;
+    padding-top:117px;
+    display: flex;
+    flex-direction:column;
 }
 .intro-left-side h1{
-   font-size:4,3rem;
-   font-weight:700px;
-   min-width:700px;
-   margin-bottom: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 82px;
+/* identical to box height, or 115% */
+
+    letter-spacing: 2px;
+    margin-bottom:10px;
 }
 .intro-left-side p {
-    margin-bottom:25px;
+    margin-top:20px;
+    margin-bottom:15px;
     letter-spacing: 2px;
     line-height:33px;
     font-size:22px;
+    color:#666;
 }
 .intro-left-side h1 span{
    color:#ff8a56;
@@ -89,9 +98,15 @@ header .nav-links a {
     height: 58px;
     background-color:#000;
     color:#fff;
+    margin-right:15px;
+}
+
+.intro-left-side a{
+    margin-right:15px;
+    color: #000;
 }
 .intro-right-side{
-    padding-top:4,3rem;
+    padding-top:4.3rem;
     min-width:500px;
     flex:1;
 
@@ -121,7 +136,6 @@ header .nav-links a {
 
 @media(max-width:1311px) and (min-width:768px){
     .intro-left-side{
-       background-color:blue;
        flex-basis:100%;
        text-align:center;
        flex-basis:100%; 
@@ -153,6 +167,10 @@ header .nav-links a {
     .trusted-by-company:not(:first-child){
         display:none;
     }
+
+    h6, h1{
+        text-align: center;
+    }
 }
 
 
@@ -164,16 +182,18 @@ header .nav-links a {
 /* services sections start */
 
 
- h6 , h1 {
-        text-align:center;
-    }
-h6{
+
+ .services h6{
     text-transform: uppercase;
     font-weight:700px;
     color: var(--pink-color);
     font-size:22px;
 }
-
+.services-section h1{
+    font-size:54px;
+    font-weight:700;
+    margin-top:20px;
+}
 
 .services{
     padding-top:100px;
@@ -181,12 +201,17 @@ h6{
 .services-cards-section{
     display: flex;
     justify-content: space-around;
+    flex-wrap:wrap;
+
 }
 
 .services-card{
     width:20%;
     min-width:250px;
     padding:20px;
+}
+.service-card p{
+    color: #666;
 }
 
 ul{
@@ -195,4 +220,101 @@ ul{
     padding-left:0;
 }
 /* sertvices sections end */
+/* projects section start */
+.projects-section{
+    display: flex;
+    flex-direction: column;
+    padding-left:113px;
+    padding-top:76px;
+}
+.projects-section h6{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:22px;
+    letter-spacing:4px;
+    color: #B16CEA;
 
+}
+.view-all-projects{
+    display: flex;
+    justify-content: space-between;
+    padding-right:112px;
+    margin-top:40px;
+}
+.view-all-projects button {
+    width:201px;
+    height:58px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+.project-card-bottom h2{
+    color:#3C46FF;
+
+}
+.view-all-projects h1 {
+    font-size:54px;
+    font-weight: 700;
+    margin-bottom:40px;
+    /* margin-top:40px; */
+    display: flex;
+    align-items: center;
+}
+.projects-cards{
+    display: flex;
+}
+.project-card{
+    /* min-width:486px; */
+    width: 480px;
+    margin-right:24px;
+
+}
+
+
+
+.project-card .project-card-top img {
+    width: 100%;
+}
+
+.project-card-bottom{
+    padding:32px;
+    background-color:#000;
+}
+.slider-btns{
+    align-self:flex-end;
+    padding-right:112px;
+    padding-top:26px;
+}
+.slider-btns button {
+    width:9,72px;
+    height:14,69px;
+    border:transparent;
+    cursor:pointer;
+}
+@media(max-width:1700px){
+    .project-card:nth-child(1){
+        display:none;
+    }
+}
+@media(max-width:1130px){
+    .project-card:nth-child(3){
+        display:none;
+    }
+}
+@media(max-width:768px){
+    .projects-section{
+        padding-left:0;
+
+    }
+    .project-card{
+        min-width:400px;
+    }
+    .slider-btns{
+        padding-right:0;
+    }
+
+
+}
+
+
+/* projects section end */
