@@ -262,6 +262,7 @@ ul{
 }
 .projects-cards{
     display: flex;
+    z-index:3;
 }
 .project-card{
     /* min-width:486px; */
@@ -278,7 +279,7 @@ ul{
 
 .project-card-bottom{
     padding:32px;
-    background-color:#000;
+    background-color:#fff;
 }
 .slider-btns{
     align-self:flex-end;
@@ -291,7 +292,14 @@ ul{
     border:transparent;
     cursor:pointer;
 }
-@media(max-width:1700px){
+.service-sec-caption {
+    text-align: center;
+}
+
+.service-section-caption-2 {
+    text-align: center;
+}
+@media(max-width:500px){
     .project-card:nth-child(1){
         display:none;
     }
@@ -318,3 +326,77 @@ ul{
 
 
 /* projects section end */
+/* latest blog section start */
+.latest-blog-section {
+    background-color: #000;
+    padding:117px;
+    padding-top:144px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top:-10%;
+}
+.latest-blog-section h6{
+    color: #FFA84B;
+    margin-bottom:15px;
+    font-size:22px;
+
+}
+.latest-blog-section h1{
+    color:#fff;
+    margin-bottom:20px;
+    font-size:54px;
+}
+.latest-blog-section a{
+    color: #fff;
+}
+.latest-blog-section h2{
+    color: #fff;
+}
+.latest-blog-section .left-side{
+    flex-basis:50%;
+    display: flex;
+    flex-direction: column;
+    min-width:373px;
+}
+.latest-blog-section .right-side{
+    flex:1;
+    min-width:450px;
+}
+    
+.latest-blog-section .right-side .blog{
+  padding: 20px 20px 20px 0;
+  border-bottom:1px solid #FFFFFF4D;
+  ;
+}
+.blog .metadata {
+    color: #FFFFFFB2;
+    margin-bottom:30px;
+    display: inline;
+
+
+}
+.latest-blog-section .right-side .blog h2{
+    font-size:28px;
+    margin-bottom:30px;
+    width:489px;
+
+}
+@media(max-width:768px){
+    .latest-blog-section{
+        padding-left:0;
+        padding-right:0;
+        align-items: center;
+    
+    }
+}
+ .latest-blog-section .right-side{
+    min-width:450px;
+ }
+
+
+
+
+
+
+/* latest blog section end */
