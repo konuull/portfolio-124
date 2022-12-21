@@ -66,8 +66,8 @@ header .nav-links a {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-left: 7, 03rem;
-    padding-right: 4rem;
+    padding-left: 7.03rem;
+    padding-right:4 rem;
 }
 
 .intro-left-side {
@@ -148,7 +148,7 @@ header .nav-links a {
     .intro-left-side {
         flex-basis: 100%;
         text-align: center;
-        flex-basis: 100%;
+        
     }
 }
 
@@ -258,6 +258,7 @@ ul {
 .view-all-projects {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-right: 112px;
     margin-top: 40px;
 }
@@ -570,6 +571,10 @@ ul {
     display: flex;
     flex-direction: column;
 }
+.education-top{
+    display: flex;
+    justify-content: space-between;
+}
 
 .work-side {
     flex: 1;
@@ -648,7 +653,9 @@ ul {
 
 @media(max-width:768px) {
     .education-work-section {
-        padding-left: 0;
+        padding: 0;
+        flex-direction: column;
+        display: flex;
 
     }
 
@@ -660,7 +667,7 @@ ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        justify-content: end;
+       
 
     }
 }
@@ -735,7 +742,7 @@ ul {
 }
 
 .testimonials-right-side {
-    padding-top: 80px;
+    padding-top: 170px;
 }
 
 .john-right-side button {
@@ -927,6 +934,7 @@ ul {
 .experience {
     flex-direction: column;
     display: flex;
+    margin-right:120px;
 }
 
 .pc-right-side a {
